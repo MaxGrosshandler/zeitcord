@@ -8,11 +8,25 @@ bot.on("ready", () => { // When the bot is ready
 });
 
 bot.on("messageCreate", (msg) => { // When a message is created
-    if(msg.content === "!ping") { // If the message content is "!ping"
+    if(msg.content === "zping") { // If the message content is "!ping"
         bot.createMessage(msg.channel.id, "Pong!");
         // Send a message in the same channel with "Pong!"
-    } else if(msg.content === "!pong") { // Otherwise, if the message is "!pong"
-        bot.createMessage(msg.channel.id, "Ping!");
+    } else if(msg.content === "zkill") { // Otherwise, if the message is "!pong"
+    if (msg.author.id === "195156669108322313"
+
+    ) {
+      let toExecute;
+      let code = "process.exit()"
+      if (code.split("\n").length === 1)
+        toExecute = eval(`async () => ${code}`);
+      else toExecute = eval(`async () => { ${code} }`);
+      toExecute.bind(this);
+      try {
+        msg.channel.createMessage(await toExecute());
+      } catch (err) {
+        msg.channel.createMessage(err.stack);
+      }
+    }
         // Respond with "Ping!"
     }
 });
