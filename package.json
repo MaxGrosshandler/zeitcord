@@ -1,0 +1,23 @@
+{
+  "name": "zeitcord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "now-build": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxGrosshandler/zeitcord.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxGrosshandler/zeitcord/issues"
+  },
+  "homepage": "https://github.com/MaxGrosshandler/zeitcord#readme",
+  "dependencies": {
+    "eris": "^0.9.0"
+  }
+}
